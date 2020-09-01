@@ -1,2 +1,13 @@
-<h5>Terimakasih</h5>
-Mathdro.id - Penyedia API informasi terkini data corona / covid-19 yang ada di Indonesia.
+<h1>Dibuat:</h1>
+<ul>
+    <li>BOOSTRAP 4</li>
+    <li>JAVASCRIPT</li>
+</ul>
+
+<h1>DEMO</h1>
+<ul>
+    <li><a href="https://informasi-covid19.web.appp">Informasi-covid19.web.app</a></li>
+</ul>
+
+
+<P>Mathdro.id - Penyedia API informasi terkini data corona / covid-19 yang ada di Indonesia.</P>
