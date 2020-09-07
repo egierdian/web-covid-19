@@ -40,28 +40,28 @@ const ambilData = data => {
             iniData = `
             <h4>Jumlah kasus saat ini di ${provinsi.provinsi}</h4>
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-s-12" style="padding-top:10px; text-align:center;">
+                <div class="col-lg-4 col-sm-6 col-md-6 col-s-12" style="padding-top:10px; text-align:center;">
                     <div class="card bg-dark" style="border:0; border-bottom: 5px solid grey;">
                         <div class="card-body text-success">
-                            <h1 class="card-title display-5">
+                            <h1 class="card-title display-5" style="font-size: 50px; margin-top:-10px;">
                             ${provinsi.kasusSemb}</h1>
                             <p class="card-text" style="margin-top: -10px;">Sembuh</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-s-12" style="padding-top:10px; text-align:center;">
-                    <div class="card bg-dark" style="border:0; border-bottom: 5px solid grey;">
+                <div class="col-lg-4 col-sm-6 col-md-6 col-s-12" style="padding-top:10px; text-align:center;">
+                    <div class="card bg-dark" style="border:0; border-bottom: 5px solid grey; ">
                         <div class="card-body text-warning">
-                            <h1 class="card-title display-5">
+                            <h1 class="card-title display-5" style="font-size: 50px; margin-top:-10px;">
                             ${provinsi.kasusPosi}</h1>
                             <p class="card-text" style="margin-top: -10px;">Positif</p>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-s-12" style="padding-top:10px; text-align:center;">
+                <div class="col-lg-4 col-sm-6 col-md-6 col-s-12" style="padding-top:10px; text-align:center;">
                     <div class="card bg-dark" style="border:0; border-bottom: 5px solid grey;">
                         <div class="card-body text-danger">
-                            <h1 class="card-title display-5">
+                            <h1 class="card-title display-5" style="font-size: 50px; margin-top:-10px;">
                             ${provinsi.kasusMeni}</h1>
                             <p class="card-text" style="margin-top: -10px;">Meninggal</p>
                         </div>

@@ -1,10 +1,11 @@
-<h1>Dibuat:</h1>
+<h3>Dibuat:</h3>
 <ul>
     <li>BOOSTRAP 4</li>
     <li>JAVASCRIPT</li>
+    <li>FIREBASE</li>
 </ul>
 
-<h1>DEMO</h1>
+<h3>DEMO</h3>
 <ul>
     <li><a href="https://informasi-covid19.web.appp">Informasi-covid19.web.app</a></li>
 </ul>
