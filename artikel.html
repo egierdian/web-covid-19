@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="images/icon.png">
     <link rel="apple-touch-icon" href="images/icon.png">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Kawal COVID-19</title>
 </head>
@@ -31,27 +31,55 @@
     </nav>
     <!-- Akhir navbar -->
 
-    <!-- Konten -->
-    <div class="container">
-        <div class="row" id="dataArtikel">
+    <!-- Section load konten -->
+    <section id="load">
+        <!-- Konten -->
+        <div class="container">
+            <div class="row" id="dataArtikel">
+            </div>
         </div>
-    </div>
 
-    <!-- Footer -->
-    <footer class="page-footer font-small blue" style="padding-top:10px;">
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Egi Erdian | Terimakasih 
-        <a href="https://mathdro.id"> Mathdro.id</a>
+        <!-- Footer -->
+        <footer class="page-footer font-small blue" style="padding-top:10px;">
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Egi Erdian | Terimakasih 
+            <a href="https://mathdro.id"> Mathdro.id</a>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        
+    </section>
+    <!-- Akhir section load konten -->
+
+    <!-- Spinners -->
+    <section id="spinner">
+        <div class="d-flex justify-content-center">
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div> 
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div> 
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
+            <div class="spinner-grow" role="status">
+                <span class="sr-only">Loading...</span>
+            </div>
         </div>
-        <!-- Copyright -->
-    </footer>
+    </section>
+    <!-- Akhir spinners -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/detailArtikel.js"></script>
+    <script src="js/spinner.js"></script>
 </body>
 </html>
