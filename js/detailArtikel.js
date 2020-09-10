@@ -31,7 +31,7 @@ function dataBerhasil(data){
             tampilkan =
             `
             <div class="col-sm-12 col-md-12 col-s-12  pt-3 pb-3">
-                <div class="card bg-white text-secondary">
+                <div class="my-3 p-3 bg-white rounded box-shadow text-secondary">
                     <div class="card-body" >
                         <h2 class="card-title display-5">${konten.val().Judul}</h2>
                         ${konten.val().Isi}    

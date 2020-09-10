@@ -34,14 +34,14 @@ const ambilData = data => {
         let kode = provinsi.fid;
         if(kode != 35){
             iniData += `
-                <div class="col-sm-6 col-md-3 col-s-12" style="padding-top:10px; text-align:center;">
-                    <div class="card bg-light" style="border:0; border-bottom: 5px solid grey;">
-                        <div class="card-body text-info" style="margin-bottom:-15px;">
-                            <a href="/detail.html?id=${provinsi.kodeProvi}" class="text-secondary"><strong><p class="card-title display-5">
-                            ${provinsi.provinsi}</p></strong></a>
-                        </div>
-                    </div>
+            <div class="media text-muted pt-3">
+                <div class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <strong class="display-5 text-gray-dark">${provinsi.provinsi}</strong>
+                    <a href="/detail.html?id=${provinsi.kodeProvi}"><button type="button" class="btn btn-sm btn-secondary">Lihat</button></a>
                 </div>
+                </div>
+            </div>
             `;
         }
     });
