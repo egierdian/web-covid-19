@@ -7,7 +7,7 @@
 
 <h3>DEMO</h3>
 <ul>
-    <li><a href="https://informasi-covid19.web.appp">Informasi-covid19.web.app</a></li>
+    <li><a href="https://informasi-covid19.web.app">Informasi-covid19.web.app</a></li>
 </ul>
 
 
