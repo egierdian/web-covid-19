@@ -11,94 +11,71 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Kawal COVID-19</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Kawal COVID-19 | Informasi data covid-19</title>
 </head>
 <body class="bg-light">
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">COVID-19</a>
+            <a class="navbar-brand" href="index.html"><h3>COVID-19</h3></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link" href="provinsi.html">Provinsi</a>
-            </div>
+            <div class="collapse navbar-collapse justify-content-end custom-menu" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="index.html"><h4>Beranda</h4><span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="provinsi.html"><h4>Provinsi</h4></a>
+                </div>
             </div>
         </div>
     </nav>
     <!-- Akhir navbar -->
-
-    <!-- Section load konten -->
-    <section id="load">
-        <!-- Konten -->
-        <div class="container pb-3">
-            <div class="row" id="dataArtikel">
-            </div>
-            <div class="my-3 p-3 bg-white rounded box-shadow">
-                <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
-                <div class="media text-muted pt-3">
-                  <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
-                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">@username</strong>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                  </p>
-                </div>
-                <div class="media text-muted pt-3">
-                  <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
-                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">@username</strong>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                  </p>
-                </div>
-                <div class="media text-muted pt-3">
-                  <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
-                  <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
-                    <strong class="d-block text-gray-dark">@username</strong>
-                    Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-                  </p>
-                </div>
-                <small class="d-block text-right mt-3">
-                  <a href="#">All updates</a>
-                </small>
-            </div>
-        </div>
-
-        <!-- Footer -->
-        <footer class="page-footer bg-dark font-small text-white blue" style="padding-top:10px;">
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Egi Erdian | Terimakasih 
-            <a href="https://mathdro.id"> Mathdro.id</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
         
-    </section>
-    <!-- Akhir section load konten -->
-
-    <!-- Spinners -->
-    <section id="spinner">
-        <div class="d-flex justify-content-center">
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div> 
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div> 
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <!-- Konten -->
+    <div class="container pb-3">
+        <div class="row" id="dataArtikel">
         </div>
-    </section>
-    <!-- Akhir spinners -->
+        <div class="my-3 p-3 bg-white rounded box-shadow">
+            <h6 class="border-bottom border-gray pb-2 mb-0">Recent updates</h6>
+            <div class="media text-muted pt-3">
+              <img data-src="holder.js/32x32?theme=thumb&bg=007bff&fg=007bff&size=1" alt="" class="mr-2 rounded">
+              <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">@username</strong>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              </p>
+            </div>
+            <div class="media text-muted pt-3">
+              <img data-src="holder.js/32x32?theme=thumb&bg=e83e8c&fg=e83e8c&size=1" alt="" class="mr-2 rounded">
+              <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">@username</strong>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              </p>
+            </div>
+            <div class="media text-muted pt-3">
+              <img data-src="holder.js/32x32?theme=thumb&bg=6f42c1&fg=6f42c1&size=1" alt="" class="mr-2 rounded">
+              <p class="media-body pb-3 mb-0 small lh-125 border-bottom border-gray">
+                <strong class="d-block text-gray-dark">@username</strong>
+                Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+              </p>
+            </div>
+            <small class="d-block text-right mt-3">
+              <a href="#">All updates</a>
+            </small>
+        </div>
+    </div>    
+
+    <!-- Footer -->
+    <footer class="page-footer bg-custom font-small text-white blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Egi Erdian | Terimakasih 
+        <a href="https://mathdro.id"> Mathdro.id</a>
+        </div>
+        <!-- Copyright -->
+    </footer>   
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -107,6 +84,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/detailArtikel.js"></script>
-    <script src="js/spinner.js"></script>
 </body>
 </html>

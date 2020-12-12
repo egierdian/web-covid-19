@@ -11,96 +11,66 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Kawal COVID-19</title>
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <title>Kawal COVID-19 | Informasi data covid-19</title>
 </head>
 <body class="bg-light">
+    
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
         <div class="container">
-            <a class="navbar-brand" href="index.html">COVID-19</a>
+            <a class="navbar-brand" href="index.html"><h3>COVID-19</h3></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-                <a class="nav-item nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
-                <a class="nav-item nav-link active" href="provinsi.html">Provinsi</a>
-            </div>
+            <div class="collapse navbar-collapse justify-content-end custom-menu" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link " href="index.html"><h4>Beranda</h4><span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="provinsi.html"><h4>Provinsi</h4></a>
+                </div>
             </div>
         </div>
     </nav>
     <!-- Akhir navbar -->
 
-    <!-- Section load konten -->
-    <section id="load">
-        <!-- Jumbotron -->
-        <div class="jumbotron bg-light" style="margin: -10px 0;">
-            <div class="container">
-                <h3 class="display-5" style="line-height: 45px;">Kawal informasi seputar COVID-19 secara tepat dan akurat.</h3>
-                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor quaerat magni deleniti adipisci, autem numquam. Minus nisi quos, consequatur mollitia qui hic dolores vitae dolorem, provident modi excepturi? Totam.</p>
-                <hr class="my-4">
-                <p>Cek Data Covid-19 Provinsi</p>
-                <p class="lead">
-                <a class="btn btn-info btn-lg" href="#Provinsi" role="button">Selengkapnya</a>
-                </p>
-            </div>
+    <!-- Jumbotron -->
+    <div class="jumbotron custom-jumbotron">
+        <div class="container">
+            <h4 class="display-4 text-light">Kawal informasi seputar COVID-19 secara tepat dan akurat.</h4>
+            <p class="lead">Memberikan informasi terkini tentang data virus covid-19 yang ada di Indonesia</p>
+            <hr class="my-4">
         </div>
+    </div>    
 
-        <!-- konten -->
-        <section id="Provinsi">
-            <div class="pt-2 pb-5">
-                <div class="container pt-3" style="padding-top:10px;">
-                    <div class="d-flex align-items-center p-3 my-3 text-white-50 bg-dark rounded box-shadow">
-                        <div class="lh-100">
-                          <h4 class="mb-0 text-white lh-100">Penyebaran Covid-19 Provinsi</h4>
-                          <!-- <small>Since 2011</small> -->
-                        </div>
+    <!-- konten -->
+    <section id="artikel">
+        <div class="container">
+            <div class="card">
+                <div class="d-flex align-items-center text-white bg-custom custom-artikel-heading">
+                    <div class="lh-100">
+                      <h4 class="mb-0 text-white lh-100">Data Covid berdasarkan Provinsi</h4>
                     </div>
-                    <div class="my-3 p-3 bg-white rounded box-shadow">
-                        <div id="dataCovid">
-    
-                        </div>
+                </div>
+                <div class="card-body" style="margin-top: -70px;">
+                    <div id="dataCovid">
+
                     </div>
-                    <!-- <div class="row" id="dataCovid">
-                        
-                    </div> -->
                 </div>
             </div>
-        </section>
-        <!-- Akhir konten -->
-
-        <!-- Footer -->
-        <footer class="page-footer bg-dark font-small text-white blue" style="padding-top:10px;">
-            <!-- Copyright -->
-            <div class="footer-copyright text-center py-3">© 2020 Egi Erdian | Terimakasih 
-            <a href="https://mathdro.id"> Mathdro.id</a>
-            </div>
-            <!-- Copyright -->
-        </footer>
-    </section>
-    <!-- Akhir section load konten -->
-
-    <!-- Spinners -->
-    <section id="spinner">
-        <div class="d-flex justify-content-center">
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div> 
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div> 
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
-            <div class="spinner-grow" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
         </div>
-    </section>
-    <!-- Akhir spinners -->
+    </section> 
+    <!-- Akhir konten -->    
+
+    <!-- Footer -->
+    <footer class="page-footer bg-custom font-small text-white blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Egi Erdian | Terimakasih 
+        <a href="https://mathdro.id"> Mathdro.id</a>
+        </div>
+        <!-- Copyright -->
+    </footer>    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -108,6 +78,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dataProvinsi.js"></script>
-    <script src="js/spinner.js"></script>
 </body>
 </html>
