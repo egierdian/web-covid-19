@@ -30,7 +30,10 @@ const ambilData = data => {
     let iniData = "";
     let element = document.getElementById("dataCovid");
 
-    console.log(data);
+    // console.log(data);
+    let tanggalDiperbarui = new Date(data.lastUpdate);
+    // console.log(tanggalDiperbarui);
+
     iniData = `
     <div class="card custom-card">
         <div class="d-flex align-items-center text-white bg-custom custom-artikel-heading">
@@ -40,7 +43,6 @@ const ambilData = data => {
         </div>
         <div class="card-body">
             <div class="row">
-                
                 <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-secondary custom-alert" role="alert">
                         <h1 class="card-title display-5">
@@ -71,6 +73,8 @@ const ambilData = data => {
                     </div>
                 </div>
             </div>
+            <p>Terakhir diperbarui <br />
+            <strong>${tanggalDiperbarui}</strong></p>
         </div>
     </div>
     
