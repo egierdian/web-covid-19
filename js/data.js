@@ -1,4 +1,4 @@
-const urlData = "https://indonesia-covid-19.mathdro.id/api/";
+const urlData = "https://covid19.mathdro.id/api/countries/id/confirmed";
 
 const fetchApi = url => {
     return fetch(url).then(res => {
@@ -30,8 +30,8 @@ const ambilData = data => {
     let iniData = "";
     let element = document.getElementById("dataCovid");
 
-    // console.log(data);
-    let tanggalDiperbarui = new Date(data.lastUpdate);
+    console.log(data[0]);
+    let tanggalDiperbarui = new Date(data[0].lastUpdate);
     // console.log(tanggalDiperbarui);
 
     iniData = `
@@ -43,32 +43,31 @@ const ambilData = data => {
         </div>
         <div class="card-body">
             <div class="row">
-                <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
+            <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-secondary custom-alert" role="alert">
                         <h1 class="card-title display-5">
-                        ${data.jumlahKasus}</h1>
+                        ${data[0].confirmed}</h1>
                         <p class="card-text">Terkonfirmasi</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
-                    <div class="alert alert-success custom-alert" role="alert">
-                        <h1 class="card-title display-5">
-                        ${data.sembuh}</h1>
-                        <p class="card-text">Sembuh</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-warning custom-alert" role="alert">
                         <h1 class="card-title display-5">
-                        ${data.perawatan}</h1>
+                        ${data[0].active}</h1>
                         <p class="card-text">Perawatan</p>
                     </div>
                 </div>
-                
+                <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
+                    <div class="alert alert-success custom-alert" role="alert">
+                        <h1 class="card-title display-5">
+                        ${data[0].recovered}</h1>
+                        <p class="card-text">Sembuh</p>
+                    </div>
+                </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-danger custom-alert" role="alert">
                         <h1 class="card-title display-5">
-                        ${data.meninggal}</h1>
+                        ${data[0].deaths}</h1>
                         <p class="card-text">Meninggal</p>
                     </div>
                 </div>
