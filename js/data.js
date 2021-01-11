@@ -25,6 +25,9 @@ const data = () => {
             console.log(error);
         })
 }
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 const ambilData = data => {
     let iniData = "";
@@ -46,29 +49,29 @@ const ambilData = data => {
             <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-secondary custom-alert" role="alert">
                         <h1 class="card-title display-5">
-                        ${data[0].confirmed}</h1>
-                        <p class="card-text">Terkonfirmasi</p>
+                        ${numberWithCommas(data[0].confirmed)}</h1>
+                        <p class="card-text" style="margin-top:-10px;">Terkonfirmasi</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-warning custom-alert" role="alert">
                         <h1 class="card-title display-5">
-                        ${data[0].active}</h1>
-                        <p class="card-text">Perawatan</p>
+                        ${numberWithCommas(data[0].active)}</h1>
+                        <p class="card-text" style="margin-top:-10px;">Perawatan</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-success custom-alert" role="alert">
                         <h1 class="card-title display-5">
-                        ${data[0].recovered}</h1>
-                        <p class="card-text">Sembuh</p>
+                        ${numberWithCommas(data[0].recovered)}</h1>
+                        <p class="card-text" style="margin-top:-10px;">Sembuh</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-sm-6 col-md-6 col-s-12 pt-2">
                     <div class="alert alert-danger custom-alert" role="alert">
                         <h1 class="card-title display-5">
-                        ${data[0].deaths}</h1>
-                        <p class="card-text">Meninggal</p>
+                        ${numberWithCommas(data[0].deaths)}</h1>
+                        <p class="card-text" style="margin-top:-10px;">Meninggal</p>
                     </div>
                 </div>
             </div>

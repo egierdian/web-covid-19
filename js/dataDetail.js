@@ -26,6 +26,10 @@ const data = () => {
         })
 }
 
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
 const ambilData = data => {
     let urlParam = new URLSearchParams(window.location.search);
     let idParam = urlParam.get("id");
@@ -50,22 +54,22 @@ const ambilData = data => {
                         <div class="col-lg-4 col-sm-12 col-md-12 col-s-12 pt-2">
                             <div class="alert alert-success custom-alert" role="alert">
                                 <h1 class="card-title display-5">
-                                ${provinsi.kasusSemb}</h1>
-                                <p class="card-text">Sembuh</p>
+                                ${numberWithCommas(provinsi.kasusSemb)}</h1>
+                                <p class="card-text" style="margin-top:-10px;">Sembuh</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-12 col-md-12 col-s-12 pt-2">
                             <div class="alert alert-warning custom-alert" role="alert">
                                 <h1 class="card-title display-5">
-                                ${provinsi.kasusPosi}</h1>
-                                <p class="card-text">Positif</p>
+                                ${numberWithCommas(provinsi.kasusPosi)}</h1>
+                                <p class="card-text" style="margin-top:-10px;">Positif</p>
                             </div>
                         </div>
                         <div class="col-lg-4 col-sm-12 col-md-12 col-s-12 pt-2">
                             <div class="alert alert-danger custom-alert" role="alert">
                                 <h1 class="card-title display-5">
-                                ${provinsi.kasusMeni}</h1>
-                                <p class="card-text">Meninggal</p>
+                                ${numberWithCommas(provinsi.kasusMeni)}</h1>
+                                <p class="card-text" style="margin-top:-10px;">Meninggal</p>
                             </div>
                         </div>
                     </div>
