@@ -26,6 +26,9 @@ const data = () => {
         })
 }
 function numberWithCommas(x) {
+    if(x == null){
+        x = 0;
+    }
     return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
 }
 
